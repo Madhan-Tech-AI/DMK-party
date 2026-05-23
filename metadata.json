@@ -1,0 +1,6 @@
+{
+  "name": "Anbil Mahesh Poiyamoli",
+  "description": "Official website of Anbil Mahesh Poiyamoli — Minister for School Education, Government of Tamil Nadu and MLA of Thiruverumbur.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

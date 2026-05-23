@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-dmk-red: #CC0000;
+  --color-dmk-black: #1A1A1A;
+  --color-dmk-gold: #F5A623;
+  --color-brand-cream: #FFF8F0;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-cream text-dmk-black font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+.bento-card {
+  @apply bg-white rounded-2xl border border-dmk-red/10 shadow-sm p-6 transition-all duration-300 hover:shadow-md;
+}
+
+.bento-card-dark {
+  @apply bg-dmk-black rounded-2xl p-6 text-white border-t-4 border-dmk-red transition-all duration-300;
+}
+
+.bento-card-accent {
+  @apply bg-dmk-red rounded-2xl p-6 text-white border-t-4 border-dmk-gold shadow-lg shadow-dmk-red/20 transition-all duration-300;
+}
+
+.skew-bg {
+  @apply absolute inset-0 bg-dmk-red transform skew-x-[-12deg] translate-x-32;
+}
+
+.label-caps {
+  @apply text-[10px] font-bold uppercase tracking-widest;
+}
